@@ -1,7 +1,6 @@
 {
   "name": "pre-entrega-react",
   "private": true,
-  "homepage": "https://Facuu96.github.io/react",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,8 +8,6 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
