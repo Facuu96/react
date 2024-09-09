@@ -6,3 +6,4 @@ export default defineConfig({
   plugins: [react()],
   base: "https://Facuu96.github.io/react"
 })
+
