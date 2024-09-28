@@ -6,7 +6,7 @@
 
 
 .navBar {
-    background-color: black; 
+    background-color: rgb(5, 26, 122); 
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
