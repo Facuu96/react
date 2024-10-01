@@ -9,7 +9,7 @@ function ItemDetailContainer() {
             <div id="card-container">
                 {prendas.map((producto) => (
                     <div className="card" key={producto.id}>
-                        <Link to={`/detail/${producto.id}`}>
+                        <Link to={`/ItemDetailContainer/${producto.id}`}>
                             <h2 className="card-title">{producto.nombre}</h2>
                             <p className="card-price">Precio: ${producto.precio}</p>
                         </Link>
