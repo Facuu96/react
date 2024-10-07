@@ -1,27 +1,23 @@
 import React from "react";
-import { useParams,} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import prendas from "../productos";
-
 
 function ItemDetail() {
     const { id } = useParams();
-    const Productos = prendas.find(Productos=>Productos.id===parseInt(id))
+    const producto = prendas.find(producto => producto.id === parseInt(id));
 
-    if (!Productos) {
-        return ( 
-            <h2>El producto no existe</h2>
-        )
+    if (!producto) {
+        return <h2>El producto no existe</h2>;
     }
 
     return (
         <div>
             <h2>Detalle del producto</h2>
-            <h2>{Productos.nombre}</h2>
-            <h2>{Productos.descripcion}</h2>
-            <h2>{Productos.precio}</h2>
+            <h2>{producto.nombre}</h2>
+            <p>{producto.descripcion}</p>
+            <p>Precio: ${producto.precio}</p>
         </div>
-    )
-    
+    );
 }
 
 export default ItemDetail;
