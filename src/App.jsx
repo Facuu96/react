@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
-import ItemDetailContainer from "./DetailComponents/ItemDetailConteiner";
+import ItemDetailConteiner from "./DetailComponents/ItemDetailConteiner";
 import ItemDetail from "./DetailComponents/ItemDetail";
 import Error from "./pages/Error";
 import Verano from "./pages/Verano";
@@ -15,7 +15,7 @@ function App() {
             <BrowserRouter>
                 <NavBar />
                 <Routes>
-                    <Route path="/" element={<ItemDetailContainer />} />
+                    <Route path="/" element={<ItemDetailConteiner />} />
                     <Route path="/producto/:id" element={<ItemDetail />} />
                     <Route path="/verano" element={<Verano />} />
                     <Route path="/invierno" element={<Invierno />} />
