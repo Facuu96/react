@@ -1,4 +1,4 @@
-import "./NavBar.css";
+import "./navbar.css";
 import CardWidget from "../cardWidget/cardWidget";
 import logo from "../../assets/descarga.png";
 import { Link } from "react-router-dom";
